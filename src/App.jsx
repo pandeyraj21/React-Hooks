@@ -6,6 +6,10 @@ import Reducer from './Reducer'
 import Usememo from './Usememo'
 import Usecallback from './Usecallback'
 import UseRefHooks from './UseRefHooks'
+import SimpleComponent from './SimpleComponent'
+import WithExtraData from './WithExtraData'
+
+const EnhacedComponent =WithExtraData(SimpleComponent)
 
 function App() {
 
@@ -15,7 +19,8 @@ function App() {
       {/* <Reducer /> */}
       {/* <Usememo/>
       <Usecallback/> */}
-      <UseRefHooks/>
+      {/* <UseRefHooks/> */}
+      <EnhacedComponent/>
       
       
     </>
