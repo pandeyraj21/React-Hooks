@@ -8,6 +8,7 @@ import Usecallback from './Usecallback'
 import UseRefHooks from './UseRefHooks'
 import SimpleComponent from './SimpleComponent'
 import WithExtraData from './WithExtraData'
+import Raj from './lazyloading/Raj'
 
 const EnhacedComponent =WithExtraData(SimpleComponent)
 
@@ -20,8 +21,8 @@ function App() {
       {/* <Usememo/>
       <Usecallback/> */}
       {/* <UseRefHooks/> */}
-      <EnhacedComponent/>
-      
+      {/* <EnhacedComponent/> */}
+      <Raj/>
       
     </>
   )
